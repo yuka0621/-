@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
@@ -16,7 +16,7 @@
         $(document).ready(function(){
             $('.slider').bxSlider({
                 auto: true,
-                pause: 5000,
+                pause: 3000,
             });
         });
 </script>
@@ -24,16 +24,16 @@
 </head>
 <body>
 
-    
+
     <header>
         <div class="header-left">
             <img class="logo" src="./img/rogo.jpg" alt="">
         </div>
         <div class="header-right">
             <ul class="nav">
-                <li><a href="#course">コース紹介</a></li>
-                <li><a href="#nyuukai">入会までの流れ</a></li>
-                <li><a href="#access">アクセス</a></li>
+                <h2><a href="#course">コース紹介</a></h2>
+                <h2><a href="#nyuukai">入会までの流れ</a></h2>
+                <h2><a href="#access">アクセス</a></h2>
             </ul>
         </div>
     </header>
@@ -42,37 +42,44 @@
 
         <section>
         <div class="slider">
-            <img src="./img/Beluga.png" width="400" height="" alt="">
-            <img src="./img/画像1.jpg" width="400" height="" alt="">
-            <img src="./img/画像2.jpg" width="400" height="" alt="">
-            <img src="./img/画像3.jpg" width="400" height="" alt="">
+            <img src="./img/Beluga.png" width="400" height="1100px" alt="">
+            <img src="./img/画像1.png" width="400" height="1100px" alt="">
+            <img src="./img/画像2.png" width="" height="1100px" alt="">
+            <img src="./img/画像3.png" width="400" height="1100px" alt="">
             </div>
         </section>
 
         <section id="course">
-            <img class="name" src="./img/viscuit.png" alt="" >
-            <h2>Viscuitとは？</h2>
-            <p class="description">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis quia, nostrum numquam quis nulla dignissimos. Eos dolore saepe laborum cumque voluptas sunt! Incidunt aliquam alias optio officia eos. Reprehenderit, rerum.
+            <h2>Viscuitコース</h2>
+            <div class="contents">
+                <img class="contents_image" src="./img/viscuit2.png" alt="">
+            <p class="discription">
+                ビスケットは，とても簡単なプログラミング言語です。メガネという仕組みたった一つだけで単純なプログラミングからとても複雑なプログラミングまで作ることができます。仕組みは単純ですが組み合わせ方が様々なので複雑なことができるのです。
+                ビスケットを使うとアニメーション・ゲーム・絵本などを簡単に作ることができます。ビスケットを使いこなすには難しいことを覚える必要はありません。だれでもプログラミングの楽しさと可能性を感じ取ることができるでしょう。
+
             </p>
-            <img class="viscuit2" src="./img/viscuit2.png" alt="">
+        </div>
         </section>
 
         <section class="scratch">
-            <img class="name" src="./img/scratch.png" alt="">
-            <h2>Scratchとは？</h2>
-            <p class="description">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus, eius esse, vel dolor molestias sed atque laboriosam ratione non tempora deserunt architecto hic nulla illum odio officiis? Beatae, ducimus eaque?
+            <h2>Scratchコース</h2>
+            <div class="contents">
+            <p class="discription">
+                スクラッチとは，アメリカのマサチューセッツ工科大学（MIT）メディアラボのライフロング・キンダーガーテンというグループがつくった、小学生でも簡単にプログラミングができるソフトです。ウェブで自由に使うことができて、自分だけのゲームやアニメーションをだれでも作ることができます。作った作品は他の人に公開することができます。また、他の人が作ったゲームを見たり、遊んだりすることもできます
             </p>
-            <img class="scratch2" src="./img/scratch2.png" alt="">
+            <img class="contents_image" src="./img/scratch2.png" alt="">
+        </div>
         </section>
 
         <section class="qureo">
-            <img class="name" src="./img/qureo.png" alt="">
+            <h2>Qureoコース</h2>
+            <h2 class="qureo_image">
             <img class="qureo1" src="./img/QUREO1.png" alt="">
             <img class="qureo2" src="./img/QUREO2.png" alt="">
             <img class="qureo3" src="./img/QUREO3.png" alt="">
             <img class="qureo4" src="./img/QUREO4.png" alt="">
+        </h2>
+        </div>
         </section>
 
         <section id="nyuukai">
@@ -82,12 +89,14 @@
 
         <section id="access">
             <h2>アクセス</h2>
+            <iframe class=map src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.828029576439!2d139.7671248!3d35.68123620000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188bfbd89f700b%3A0x277c49ba34ed38!2z5p2x5Lqs6aeF!5e0!3m2!1sja!2sjp!4v1628655047096!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </section>
 
     </main>
 
     <footer>
-        copyright@
+        <div class="foot">© Beruga Kids Academy.
+        </div>
     </footer>
 
 </body>
