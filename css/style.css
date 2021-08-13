@@ -20,11 +20,62 @@ header{
 }
 
 .nav > h2 > a{
-    color: orange;
+    color: white;
     font-size: 30px;
-    margin-left: 20px;
+    margin-left: 40px;
     text-decoration: none;
 }
+
+.tel{
+  font-size: 30px;
+}
+
+#page_top{
+  width: 200px;
+  height: 120px;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  background: rgb(0, 140, 255);
+  opacity: 0.6;
+}
+#page_top a{
+  position: relative;
+  display: block;
+  width: 200px;
+  height: 100px;
+  text-decoration: none;
+}
+#page_top a::before{
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  content: '\f102';
+  font-size: 25px;
+  color: #fff;
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  top: -px;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  text-align: center;
+}
+#page_top a::after{
+  content: 'PAGE TOP';
+  font-size: 30px;
+  color: #fff;
+  position: absolute;
+  top: 40px;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  text-align: center;
+}
+
+Resources
 
 .name{
   width: 500px;
@@ -124,7 +175,7 @@ header{
 footer{
   background-color: rgb(52, 132, 189);
   font-size: 140%;
-  color: orange;
+  color: white;
   padding: 20px 0;
   margin-top: 100px;
   display: flex;
