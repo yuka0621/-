@@ -62,6 +62,7 @@ header{
   margin: auto;
   text-align: center;
 }
+
 #page_top a::after{
   content: 'PAGE TOP';
   font-size: 30px;
